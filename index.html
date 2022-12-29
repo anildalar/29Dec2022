@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Class Members</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        
+
+        <script>
+            /*
+            Syntax/Formula
+
+            class ClassName{ // PascalCase
+                //1. Member
+
+                //2. Member
+
+                //3. Member
+            }
+
+            */
+
+            //1. Function defination
+            function myFunction(){
+
+            }
+
+            //2. FUnction Call
+            myFunction();
+
+            // var/let/const
+
+            //Glboal variable
+            let x = 10;
+            var z = 50;
+
+            class MyClass{
+                //1. Member 1/
+                //1. Properties/Variables
+                y = 20;
+                a = 20;
+
+
+                //2. Members 2
+
+                //3. Method defination
+                myFunction2(){
+                    console.log("hi2");
+                }
+                
+                addNumbers(){
+                    console.log(x+this.y);
+                    console.log(this.addNumbers2());   
+                }
+
+                addNumbers2(){
+                    //console.log(z+this.a);
+                    return z+this.a;
+                }
+
+                addNumbers3(b){ // b is a formal argument/parameter
+                    console.log(this.y+this.a+b);
+                }
+            }
+
+            /*
+            let object = new ClassName();
+            object.method();   // . = member selection operator
+            */
+            let object = new MyClass();
+            //2. Method calling
+            object.myFunction2();
+            object.addNumbers();
+            object.addNumbers3(40); //Actual arguments/parameter
+
+        </script>
+
+        <script>
+
+            class MyClassA{
+                //1.Properties
+                x=50;
+
+                //2. 
+
+                //3.Methods
+            }
+            /*
+            class ChildClass exteds ParentClass{
+
+            }
+            */
+            class MyClassB extends MyClassA{
+                //1.Properties
+                y=50;
+                //2. 
+
+                //3.Methods
+
+                addMyNumbers(){
+                    console.log();
+                }
+            }
+
+            let objectb = new MyClassB();
+            console.log(objectb.x+objectb.y);
+
+        </script>
+
+        <script>
+            class MyClassAA{
+                //1.Properties
+                name="ANIL";//Declerae and initialization
+                surname="Dollor";
+                age;  // Declerae
+
+                //2.constructor method
+                constructor(){
+                    //Initialize
+                    this.age = 30; //Associativity of opertor
+                    //  Left = Right   Right -> Left
+                }
+
+
+                //3. Methods
+                hello(){
+                    console.log('Hello'+this.name+this.surname+" You are "+this.age+" Year old");
+                }
+
+            }
+
+            let oaa = new MyClassAA();
+
+            oaa.hello();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+What are properties in class ?
+
+Properties are variable declered inside the class
+
+
+this belong to current class object
+
+this is a internal class object
+
+
+There are 3 members of the class
+1. Properties/Variable
+2. Constructor (Especial Method)
+3. Methods/Functions
+
+
+Constructor is a especial method used to initialize the properties
+
+The most imp point about constructor
+
+* The constructor called imediatly when you create class object
+
+
+A
+	x=10;
+	console.log();
+
+
+			..
+	
+						
+						Z
+
+						let zobj = new Z(10);
